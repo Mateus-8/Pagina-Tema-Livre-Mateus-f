@@ -1,31 +1,124 @@
+
 body {
     background-color: black;
     color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("../assets/batman-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    text-align: center;
 }
+
+
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 
 h1 {
     color: rgb(255, 255, 255);
     text-align: center;
 }
 
-.imagens-batman {
-    height: 100px;
-    width: 200px;
+header h1 {
+    color: hsl(214, 100%, 57%);
+    font-size: 38px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+nav {
+    background-color: #1b1b1b;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color:hsl(214, 100%, 57%);
+}
+
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 25px 20px;
+}
+
+
+section {
+    margin: 35px auto;
+    padding: 30px;
+    background-color: #191919;
+    border-radius: 12px;
+    border: 1px solid #333;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+section h2 {
+    color: hsl(214, 100%, 57%);
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+section p {
+    text-align: center  ;
+    margin-bottom: 15px;
+    color: #dddddd;
+}
+
+
+.imagens-capa {
+    height: 300px;
+    width: 300px;
     border: 2px;
     border-style: solid;
     border-color: aliceblue;
     border-radius: 10px;
     transition: transform 0.67s;
-    
 }
 
-.imagens-batman:hover {
+
+.img-delorean {
+    height: auto;
+    width: 400px;
+    border: 2px;
+    border-style: solid;
+    border-color: aliceblue;
+    border-radius: 10px;
+}
+
+
+.img-interior {
+    height: auto;
+    width: 400px;
+    border: 2px;
+    border-style: solid;
+    border-color: aliceblue;
+    border-radius: 10px;
+}
+
+
+.imagens-capa:hover {
     transform: scale(1.67);
 }
+
 
 .galeria {
     display: flex;
@@ -33,14 +126,151 @@ h1 {
     gap: 20px;
 }
 
-p {
-    color: aqua;
+
+
+ul {
+    padding-left: 25px;
+    color: #dddddd;
 }
 
-footer p {
-    color: rgb(233, 21, 187);
+li {
+    margin-bottom: 10px;
 }
 
-#foto-principal {
-    border-color: rgb(255, 221, 0)
+
+#formulario {
+    max-width: 700px;
+    margin: 45px auto;
+    padding: 35px;
+    background-color: #191919;
+    border: 2px solid #0aa6e4;
+    border-radius: 15px;
+}
+
+#formulario h2 {
+    color: hsl(214, 100%, 57%);
+    text-align: center;
+    font-size: 30px;
+}
+
+#formulario p {
+    text-align: center;
+    color: #cccccc;
+    margin-bottom: 25px;
+}
+
+#formulario form > label {
+    display: block;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    color: hsl(214, 100%, 57%);
+    font-weight: bold;
+}
+
+#formulario select,
+#formulario textarea {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    background-color: #252525;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+#formulario select:focus,
+#formulario textarea:focus {
+    outline: 2px solid hsl(214, 100%, 57%);
+}
+
+#formulario form > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0;
+    color: #dddddd;
+}
+
+#formulario input[type="radio"] {
+    accent-color: hsl(214, 100%, 57%);
+    width: 17px;
+    height: 17px;
+}
+
+#formulario textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    background: linear-gradient(90deg, #0997cf, #ffffff);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(255,87,34,0.5);
+}
+
+
+footer {
+    background-color: #080808;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    border-top: 2px solid #158bda;
+    color: #aaaaaa;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    section {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    #formulario {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    #formulario h2 {
+        font-size: 24px;
+    }
 }

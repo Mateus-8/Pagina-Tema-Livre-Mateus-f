@@ -7,21 +7,10 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+
 <header>
 <h1>Site sobre De Volta Para o Futuro</h1>
 </header>
-
- <a href="#conteudo">Pular para o conteúdo</a>
-   
-<nav aria-label="Menu principal">
-<ul>
- <li><a href="index.html" aria-current="page">Início</a></li>
- <li><a href="sobre.html">Sobre</a></li>
- <li><a href="dados.html">Dados</a></li>
- <li><a href="cadastro.html">Cadastro</a></li>
- <li><a href="contato.html">Contato</a></li>
-</ul>
-</nav>
 
  <section>
  <h2>Conheça De Volta Para o Futuro</h2>
@@ -36,12 +25,12 @@
 <h2>Imagens do delorean</h2>
 
 <figure>
- <img src="assets/delorean-dmc-12.jpg" alt="Delorean Original "width="615" height="400">
+ <img src="IMG/delorean-dmc-12.jpg" class="img-delorean" alt="Delorean Original "width="615" height="400">
  <figcaption>Versão Original de Fabríca</figcaption>
 </figure>
 
 <figure>
- <img src="assets/DeLorean_Replica_Kovacs_Time_Machine.png" alt="Delorean do Filme "width="615" height="400">
+ <img src="IMG/DeLorean_Replica_Kovacs_Time_Machine.png" class="img-delorean"alt="Delorean do Filme "width="615" height="400">
  <figcaption>Versão do Filme </figcaption>
 </figure>
 
@@ -58,11 +47,101 @@
 <p>Depois de descobrir que Doc ficou preso em 1885, Marty viaja até o Velho Oeste para resgatá-lo. Lá, eles enfrentam novos desafios, incluindo o perigoso Buford Tannen. Durante a aventura, Doc conhece Clara Clayton e acaba se apaixonando, fazendo com que sua vontade de voltar ao futuro fique dividida entre permanecer no passado ou retornar ao presente.</p>
 </section>
 
+<main>
+        <div class="galeria">
+            <img id="foto-principal" class="imagens-capa" src="IMG/capa 1.jpg" alt="Capa primeiro filme." >
+            <img class="imagens-capa" src="IMG/capa 2.jpg" alt="Capa segundo filme.">
+            <img class="imagens-capa" src="IMG/capa 3.jpg" alt="Capa terceiro filme." >
+        </div>
+
+</body>
+</html>
+
 <section>
-<h2>Personagens</h2>
+<h2>Personagens Principais</h2>
 
+<p><strong>Marty McFly</strong></p>
+<p>Marty é o protagonista da trilogia. Um adolescente corajoso e aventureiro que viaja pelo tempo com o DeLorean. Ele está sempre tentando corrigir problemas e proteger sua família</p>
 
+<p><strong>Doc Brown</strong></p>
+<p>Doc é um cientista muito inteligente e excêntrico, responsável pela criação da máquina do tempo. Suas invenções e ideias são fundamentais para todas as aventuras</p>
 
+<p><strong>Clara Clayton</strong></p>
+<p>Clara é uma professora que Doc conhece em 1885. Os dois acabam se apaixonando, tornando-se uma parte muito importante da história do terceiro filme.</p>
+</section>
 
+<p><strong>Biff Tannen</strong></p>
+<p>Biff é o antagonista principal da trilogia. Um homem arrogante e malvado que sempre tenta manipular a vida de Marty e sua família. Ele é o responsável por muitos dos problemas que surgem durante as viagens no tempo.</p>
+</section>
+
+<p><strong>Jennifer Parker</strong></p>
+<p>Jennifer é a namorada de Marty. Carinhosa e companheira, participa de momentos importantes da história e acaba envolvida nas aventuras relacionadas às viagens no tempo.</p>
+</section>
+
+<section>
+<h2>Máquina Do Tempo</h2>
+
+<p><strong>DeLorean DMC-12</strong></p>
+<p>O DeLorean é o famoso carro utilizado como máquina do tempo nos filmes. Com sua carroceria prateada, portas que abrem para cima e visual futurista, ele se tornou um dos veículos mais marcantes do cinema. Criado por Doc Brown, o carro precisa atingir 88 mph (142 km/h) para realizar viagens no tempo.</p>
+
+<figure>
+ <img src="IMG/interior.jpg" class="img-interior" alt="Delorean do Filme "width="615" height="400">
+ <figcaption>Deloran Interior</figcaption>
+</figure>
+
+</section>
+
+<section>
+<h2>Formulário sobre a Trilogia</h2>
+
+<section id="formulario">
+    <h2>Deixe sua opinião!</h2>
+    <p>Queremos saber o que você pensa sobre a trilogia De Volta para o Futuro.</p>
+
+    <form id="form-filme">
+
+        <!-- Filme favorito -->
+        <label for="filme">Qual filme você mais gostou?</label>
+        <select id="filme" name="filme" required>
+            <option value="">Selecione uma opção</option>
+            <option value="De Volta para o Futuro">De Volta para o Futuro (1985)</option>
+            <option value="De Volta para o Futuro II">De Volta para o Futuro II (1989)</option>
+            <option value="De Volta para o Futuro III">De Volta para o Futuro III (1990)</option>
+        </select>
+
+        <!-- Preferência do carro -->
+        <label>Você prefere:</label>
+        <div>
+            <input type="radio" id="original" name="carro" value="Original" required>
+            <label for="original">DeLorean original</label>
+        </div>
+
+        <div>
+            <input type="radio" id="filme" name="carro" value="Do filme">
+            <label for="filme">DeLorean do filme</label>
+        </div>
+
+        <!-- Personagem favorito -->
+        <label for="personagem">Qual seu personagem favorito?</label>
+        <select id="personagem" name="personagem" required>
+            <option value="">Selecione um personagem</option>
+            <option value="Marty McFly">Marty McFly</option>
+            <option value="Doc Brown">Doc Brown</option>
+            <option value="Biff Tannen">Biff Tannen</option>
+            <option value="Jennifer Parker">Jennifer Parker</option>
+            <option value="Clara Clayton">Clara Clayton</option>
+        </select>
+
+        <!-- Quarto filme -->
+        <label for="quarto-filme">
+            Se fosse fazer um quarto filme, como seria?
+        </label>
+        <textarea id="quarto-filme" name="quarto-filme"
+            rows="5" placeholder="Conte sua ideia..." required></textarea>
+
+        <button type="submit">Enviar respostas</button>
+
+    </form>
+</section>
 
 </section>
