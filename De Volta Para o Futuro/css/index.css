@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../assets/batman-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.imagens-batman {
+    height: 100px;
+    width: 200px;
+    border: 2px;
+    border-style: solid;
+    border-color: aliceblue;
+    border-radius: 10px;
+    transition: transform 0.67s;
+    
+}
+
+.imagens-batman:hover {
+    transform: scale(1.67);
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+p {
+    color: aqua;
+}
+
+footer p {
+    color: rgb(233, 21, 187);
+}
+
+#foto-principal {
+    border-color: rgb(255, 221, 0)
+}
